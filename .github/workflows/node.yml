@@ -31,6 +31,6 @@ jobs:
       run: |
         npm i
         npx playwright install
-    - name: Testing PMS with test env
+    - name: test
       shell: bash
       run: npx playwright test
