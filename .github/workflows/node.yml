@@ -31,4 +31,4 @@ jobs:
         npx playwright install
     - name: test
       shell: bash
-      run: npx playwright test
+      run: npx playwright test test/*worker${{ matrix.worker }}*.spec.js
