@@ -1,13 +1,9 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
 
-/**
- * @worker: 1
- */
-
-test.describe("suite 2 worker 2",() => {
-    test("test 2", async ({ page }) => {
-        const num = 4
-        console.log(a)
-    })
-})
+test.describe("Login Tests", () => {
+  test("Successful Login", { tags: ["login"] }, async () => {
+    // Your test code here
+      console.log(2)
+  });
+});
